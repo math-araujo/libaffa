@@ -32,3 +32,5 @@ set_target_properties(libaffa_libaffa PROPERTIES CXX_EXTENSIONS OFF)
 #endif()
 
 add_library(libaffa::libaffa ALIAS libaffa_libaffa)
+
+add_subdirectory(examples)

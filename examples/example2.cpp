@@ -124,7 +124,7 @@ int main(int argc, char **argv)
         // we put "?" which is understood by gnuplot as
         // missing data
 
-        if (finite(y))
+        if (isfinite(y))
             data1 << y << endl;
         else
             data1 << "?" << endl;
@@ -164,8 +164,8 @@ int main(int argc, char **argv)
         // We check if we calculated a non-finite value
         // and we save the sup box and the inf box
 
-        bool finy = finite(y);
-        bool finydelta = finite(ydelta);
+        bool finy = isfinite(y);
+        bool finydelta = isfinite(ydelta);
 
         if (finy)
             data2 << y << "\t";
