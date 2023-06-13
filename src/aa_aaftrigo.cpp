@@ -184,9 +184,10 @@ AAF asinh(const AAF & P) {
     return(log(P + sqrt(sqr(P) + 1)));
 }
 
+/*
 AAF atanh(const AAF & P) {
 
-}
+}*/
 
 
 

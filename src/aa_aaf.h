@@ -133,7 +133,7 @@ AAF sinh(const AAF & P);
 AAF tanh(const AAF & P);
 AAF acosh(const AAF & P);
 AAF asinh(const AAF & P);
-AAF atanh(const AAF & P);
+// AAF atanh(const AAF & P);
 
 AAF half_plane(const AAF & P);
 

@@ -26,6 +26,7 @@
 #include <cstdio>
 #include <iostream>
 #include <cmath>
+#include <numbers>
 
 // interval(), modlo(), modhi(), modlohi() are not
 // inline functions as they arent used by the lib
@@ -177,6 +178,7 @@ interval min_trigo( const interval &I) {
     double b = I.right();
     double t1, t2 ;
 
+    constexpr double M_PI{std::numbers::pi};
     t1 = floor(a/(2*M_PI));
     t2 = b - a;
 
